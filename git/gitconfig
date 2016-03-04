@@ -1,0 +1,41 @@
+[user]
+	name = asolove
+	email = asolove@gmail.com
+[credential]
+	helper = osxkeychain
+
+[alias]
+	b = branch
+	ba = branch -a
+	ci = commit
+	co = checkout
+	cob = branch | cut -c 3- | selecta | xargs git checkout
+	d = diff
+	dc = diff --cached
+	fp = format-patch
+	g = !git gui &
+	gr = log --graph
+	go = log --graph --pretty=oneline --abbrev-commit
+	k = !gitk &
+	ka = !gitk --all &
+	lc = log ORIG_HEAD.. --stat --no-merges
+	lp = log --patch-with-stat
+	mnf = merge --no-ff
+	mnff = merge --no-ff
+	merge-to = "!gitmergeto() { export tmp_branch=`git branch | grep '* ' | tr -d '* '` && git checkout $1 && git merge $tmp_branch && git checkout $tmp_branch; unset tmp_branch; }; gitmergeto"
+	mt = mergetool
+	p = format-patch -1
+	serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+	sra = svn rebase --all
+	sh = !git-sh
+	st = status
+	stm = status --untracked=no
+	stfu = status --untracked=no
+	pullsrb = !git stash save && git pull --rebase && git stash pop && echo 'Success!'
+	l = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
+[core]
+	pager = less -x2
+	excludesfile = /Users/asolove/.gitignore_global
+[push]
+	default = current

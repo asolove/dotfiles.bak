@@ -3,6 +3,12 @@ My dot files
 
 - Using dotbot to manage installation.
 
+Todo:
+
+- Zsh setup (oh my zsh again?)
+- Pry/gem/rvm setup
+
+
 Setup steps:
 
 - Install iTerm
