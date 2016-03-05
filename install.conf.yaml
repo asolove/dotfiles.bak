@@ -6,9 +6,12 @@
 
 - link:
     ~/dotfiles: ''
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.vimrc: vim/vimrc
+    ~/.zshrc: zshrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
