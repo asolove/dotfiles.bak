@@ -6,6 +6,11 @@ set smartindent
 set shiftwidth=2
 set expandtab
 set tabstop=2
+set backspace=2
 
 let mapleader = ","
 
+set laststatus=2
+let g:airline_theme='papercolor'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_alt_sep = '|'
