@@ -84,8 +84,15 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # Docker env setup
-eval "$(docker-machine env default --shell=bash)"
+# eval "docker-machine start default"
+# eval "$(docker-machine env default --shell=bash)"
 
 # NVM
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
+
+# VMWare
+export PATH="$PATH:/Applications/VMware Fusion.app/Contents/Library"
+
+ssh-agent
+ssh-add
